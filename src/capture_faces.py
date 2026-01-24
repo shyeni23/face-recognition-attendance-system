@@ -6,7 +6,8 @@ import time
 student_id = input("Enter Student ID: ")
 
 # Create folder for student
-dataset_path = os.path.join("..", "dataset", f"student_{student_id}")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dataset_path = os.path.join(BASE_DIR, "dataset", f"student_{student_id}")
 os.makedirs(dataset_path, exist_ok=True)
 
 # Open camera
