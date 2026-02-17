@@ -23,3 +23,6 @@ dataset/
 
 # Exports
 exports/
+
+models/
+trainer/
